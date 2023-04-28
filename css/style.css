@@ -78,3 +78,18 @@ h3 {
     outline: 2px dotted red;
     margin: 24px 0px;
 }
+
+section {
+    margin: 24px 0px;
+    outline: 2px dotted brown;
+}
+
+/* section div {
+    
+} */
+
+.imgBox {
+    background-color: beige;
+    width: 25rem; 
+    height: 25rem; 
+}
