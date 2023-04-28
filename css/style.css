@@ -1,11 +1,80 @@
 /* 
-font-family: 'Playfair Display', serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Raleway Dots', cursive; 
+font-family: 'Playfair Display', 'Georgia', serif;
+font-family: 'Raleway', 'Verdana', sans-serif;
+font-family: 'Raleway Dots', 'Brush Script MT', cursive; 
 */
 
+/* Repetitive classes 
+Color shades 1-6, 1 lightest to 6 darkest
+*/
+
+.color1 {
+    color: #F5F5F5;
+}
+
+.color2 {
+    color: #EAEAEA;
+}
+
+.color3 {
+    color: #C4C5C2;
+}
+
+.color4 {
+    color: #9FA29C;
+}
+
+.color5 {
+    color: #848981;
+}
+
+.color6 {
+    color: #1B1B1B;
+}
+
+/* CSS start here */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', 'Verdana', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    margin: 32px 16px;
+}
+
+header {
+    position: sticky;
+}
+
+header .headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 2px dotted red;
+}
+
+h1 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    outline: 2px dotted red;
+    margin: 24px 0px;
+}
+
+h3 {
+    font-family: 'Raleway Dots', 'Brush Script MT', cursive; 
+    font-weight: 400;
+    font-size: 3rem;
+    outline: 2px dotted red;
+    margin: 24px 0px;
 }
