@@ -52,7 +52,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0.5rem 1rem;
 }
 
 .headings{
@@ -116,7 +116,7 @@ h3 {
     font-weight: 400;
     font-size: 3rem;
     outline: 2px dotted red;
-    margin: 13rem 0 0 0;
+    margin: 12rem 0 0 0;
     display: flex;
     justify-content: center;
 }
