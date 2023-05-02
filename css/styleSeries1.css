@@ -1,0 +1,74 @@
+/* 
+font-family: 'Playfair Display', 'Georgia', serif;
+font-family: 'Raleway', 'Verdana', sans-serif;
+font-family: 'Raleway Dots', 'Brush Script MT', cursive; 
+*/
+
+/* Helper classes 
+Color shades 1-6, 1 lightest to 6 darkest
+*/
+
+.color1 {
+    color: #f5f5f5;
+}
+
+.color2 {
+    color: #EAEAEA;
+}
+
+.color3 {
+    color: #C4C5C2;
+}
+
+.color4 {
+    color: #9FA29C;
+}
+
+.color5 {
+    color: #848981;
+}
+
+.color6 {
+    color: #1B1B1B;
+}
+
+.bgColor1 {
+    background-color: #f5f5f5;
+}
+
+.bgColor2 {
+    background-color: #EAEAEA;
+}
+
+.bgColor3 {
+    background-color: #C4C5C2;
+}
+
+.bgColor4 {
+    background-color: #9FA29C;
+}
+
+.bgColor5 {
+    background-color: #848981;
+}
+
+.bgColor6 {
+    background-color: #1B1B1B;
+}
+
+.boxShadow {
+    box-shadow: 1px 4px 8px 0 #848981;
+}
+
+/* CSS start here */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'Verdana', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    margin: 32px 16px;
+}
