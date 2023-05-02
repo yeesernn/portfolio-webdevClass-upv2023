@@ -57,7 +57,7 @@ Color shades 1-6, 1 lightest to 6 darkest
 }
 
 .boxShadow {
-    box-shadow: 2px 4px 8px 0 #848981;
+    box-shadow: 1px 4px 8px 0 #848981;
 }
 
 /* CSS start here */
