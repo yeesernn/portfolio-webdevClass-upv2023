@@ -143,12 +143,15 @@ h3 {
     justify-content: center;
 }
 
-section {
+.imgContainer {
     margin: 24px 0px;
     outline: 2px dotted brown;
+    display: flex;
+    flex-flow: column;
 }
 
 img {
     width: 100%;
     height: auto;
+    margin: 0 0 24px 0;
 }
