@@ -144,12 +144,7 @@ section {
     outline: 2px dotted brown;
 }
 
-/* section div {
-    
-} */
-
-.imgBox {
-    background-color: beige;
-    width: 25rem; 
-    height: 25rem; 
+img {
+    width: 100%;
+    height: auto;
 }
