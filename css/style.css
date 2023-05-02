@@ -32,6 +32,10 @@ Color shades 1-6, 1 lightest to 6 darkest
     color: #1B1B1B;
 }
 
+.boxShadow {
+    box-shadow: 2px 4px 8px 0 #848981;
+}
+
 /* CSS start here */
 * {
     margin: 0px;
