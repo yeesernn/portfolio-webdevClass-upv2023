@@ -93,6 +93,10 @@ header {
     padding: 32px 16px 16px 16px;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Playfair Display', 'Georgia', serif;
     font-style: italic;
@@ -101,7 +105,7 @@ h1 {
 }
 
 .icon-menu {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     cursor: pointer;
 }
 
@@ -116,7 +120,7 @@ nav {
 }
 
 .navOpaque {
-    height: 50vh;
+    height: 40vh;
 }
 
 .showMenu {
@@ -140,14 +144,12 @@ nav ul li {
 nav ul li a {
     font-size: 2rem;
     font-weight: 500;
-    text-decoration: none;
 }
 
 .seriesMenu {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     /* outline: 2px solid blue; */
     padding: 0px 0 0px 32px;
-    text-decoration: none;
 }
 
 h2 {
@@ -161,19 +163,26 @@ h3 {
     font-family: 'Raleway Dots', 'Brush Script MT', cursive; 
     font-weight: 400;
     font-size: 3rem;
-    margin: 30vh 0 0 0;
+    margin: 30vh 0 5vh 0;
     display: flex;
     justify-content: center;
 }
 
 .imgContainer {
-    margin: 24px 0px;
+    /* margin: 24px 0; */
     display: flex;
     flex-flow: column;
+    gap: 24px;
+}
+
+article {
+    margin: 48px 0 4px 0;
+    /* padding: 0 0 4px 0; */
+    /* background-color: red; */
 }
 
 img {
     width: 100%;
     height: auto;
-    margin: 0 0 24px 0;
+    /* margin: 0 0 24px 0; */
 }
