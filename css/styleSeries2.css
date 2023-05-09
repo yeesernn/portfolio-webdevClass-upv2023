@@ -9,3 +9,111 @@
 body {
     margin: 32px 16px;
 }
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.headings {
+    position: relative;
+}
+
+.headingWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    padding: 32px 16px 16px 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.icon-menu {
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: -900%; 
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    background-color: #c4c5c270;
+}
+
+.navOpaque {
+    height: 40vh;
+}
+
+.showMenu {
+    top: 100%; /* % relative to the parent: .headings, thus let h1 come out*/
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    /* outline: 2px solid black; */
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 16px;
+    /* outline: 2px solid yellow; */
+}
+
+nav ul li a {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.seriesMenu {
+    font-size: 1.5rem;
+    /* outline: 2px solid blue; */
+    padding: 0px 0 0px 32px;
+}
+
+h2 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 24px 16px 8px 16px;
+}
+
+h3 {
+    font-family: 'Raleway Dots', 'Brush Script MT', cursive; 
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 30vh 0 2vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer {
+    /* margin: 24px 0; */
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /* margin: 0 0 24px 0; */
+}
