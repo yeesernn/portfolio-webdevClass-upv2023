@@ -42,6 +42,10 @@ h2 {
     margin: 0 0 0 1rem;
 }
 
-#closeBtn {
+a {
     text-decoration: none;
+}
+
+#contactBtn {
+    text-decoration: underline;
 }

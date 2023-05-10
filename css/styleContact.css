@@ -5,3 +5,63 @@
     font-family: 'Raleway', 'Verdana', sans-serif;
     font-size: 1rem;
 }
+
+body {
+    margin: 32px 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    margin: 0 0 2rem 0;
+    border: 1.75px solid;
+    border-radius: 4px;
+    padding: 1rem 0.75rem;
+}
+
+input {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    border: 1.75px solid;
+    border-radius: 4px;
+}
+
+.msgInput {
+    padding: 4rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    margin: 2rem 0;
+    line-height: 1.5rem;
+}
+
+iframe {
+    width: 100%;
+}
