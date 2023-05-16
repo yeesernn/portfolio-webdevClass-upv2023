@@ -47,6 +47,16 @@ input {
     padding: 4rem;
 }
 
+form button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0;
+    padding: 8px 12px;
+    white-space: nowrap;
+    color: white;
+}
+
 h2 {
     font-family: 'Playfair Display', 'Georgia', serif;
     font-weight: 900;
