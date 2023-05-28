@@ -46,36 +46,43 @@ h1 {
     cursor: pointer;
 }
 
+.h3Desktop {
+    display: none;
+}
+
+.h2Desktop {
+    display: none;
+}
+
 nav {
     position: absolute;
     width: 100%;
     height: 100vh;
-    top: -900%; 
+    top: -1200%; 
     transition: all 0.3s ease-in-out;
     z-index: 10;
     background-color: #c4c5c270;
 }
 
 .navOpaque {
-    height: 40vh;
+    height: 50vh;
 }
 
 .showMenu {
-    top: 100%; /* % relative to the parent: .headings, thus let h1 come out*/
+    top: 100%; 
+    /* % relative to the parent: .headings, thus let h1 come out*/
 }
 
 nav ul {
     display: flex;
     flex-flow: column;
     height: 100%;
-    /* outline: 2px solid black; */
     justify-content: space-around;
 }
 
 nav ul li {
     list-style: none;
     padding: 0 16px;
-    /* outline: 2px solid yellow; */
 }
 
 nav ul li a {
@@ -85,7 +92,6 @@ nav ul li a {
 
 .seriesMenu {
     font-size: 1.5rem;
-    /* outline: 2px solid blue; */
     padding: 0px 0 0px 32px;
 }
 
@@ -105,21 +111,318 @@ h3 {
     justify-content: center;
 }
 
-.imgContainer {
-    /* margin: 24px 0; */
+.rightSide {
     display: flex;
     flex-flow: column;
     gap: 24px;
 }
 
-article {
-    margin: 48px 0 4px 0;
-    /* padding: 0 0 4px 0; */
-    /* background-color: red; */
+.rightSide > article {
+    margin: 48px 0 -24px 0;
 }
 
 img {
     width: 100%;
     height: auto;
-    /* margin: 0 0 24px 0; */
+}
+
+.imgDesktopOnly {
+    display: none;
+}
+
+/* --------------Media queries start ------------------------*/
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        /* border: 10px solid green; */
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .leftSide {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .rightSide {
+        width: 50vw;
+        padding: 2rem 0rem 1rem 0;
+        overflow-y: auto;
+    }
+
+    header {
+        position: static;
+        /* outline: 2px dotted blue; */
+    }
+
+    .headings {
+        position:static;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    /* h1 {
+        background-color: lightsalmon !important;
+    } */
+
+    h2 {
+        margin: -5rem 0 2rem 0;
+    }
+
+    .h3Mobile {
+        display: none;
+    }
+
+    .h2Mobile {
+        display: none;
+    }
+
+    .h3Desktop {
+        display: inline-flex;
+        /* outline: 2px solid green; */
+        margin: 0 0 0 1rem;
+        align-self: flex-start;
+    }
+
+    .h2Desktop {
+        display: inline-flex;
+        /* outline: 3px solid red; */
+    }
+
+    nav {
+        position: static;
+        height: 100%;
+    }
+
+    .navOpaque {
+        height: 40vh;
+    }
+
+    .leftMenu {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .seriesMenu {
+        font-size: 1.5rem;
+        padding: 0px 0 0px 32px;
+        display: none;
+        /* transition: all 0.6s ease-in-out; */
+        /* position: static; */
+        /* opacity: 1; */
+        /* max-height: 0px; */
+        /* overflow: hidden; */
+    }
+
+    nav ul li a {
+        color: #9FA29C !important;
+        transition: .3s;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .rightSide > article {
+        display: none;
+    }
+}
+
+/* ----------------------Media queries for DESKTOP ----------------------------- */
+@media (min-width: 1024px) {
+    /* h1 {
+        background-color: lightskyblue !important;
+    } */
+
+    h1:hover {
+        color: #848981;
+    }
+
+    .imgDesktopOnly {
+        display: grid;
+    }
+
+    .rightSide {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(22, auto);
+    }
+
+    .grid1 {
+        grid-row: 1/6;
+    }
+
+    .grid2 {
+        grid-row: 2/7;
+    }
+
+    .grid3 {
+        grid-row: 6/11;
+    }
+
+    .grid4 {
+        grid-row: 7/12;
+    }
+    
+    .grid5 {
+        grid-row: 11/16;
+    }
+
+    .grid6 {
+        grid-row: 12/17;
+    }
+
+    .grid7 {
+        grid-row: 16/21;
+    }
+
+    .grid8 {
+        grid-row: 17/22;
+    }
+
+    .grid1,
+    .grid2,
+    .grid3,
+    .grid4,
+    .grid5,
+    .grid6,
+    .grid7,
+    .grid8,
+    .textOverlay1,
+    .textOverlay2,
+    .textOverlay3,
+    .textOverlayException {
+        position: relative;
+    }
+
+    .textOverlay1::before,
+    .textOverlay2::before,
+    .textOverlay3::before,
+    .textOverlayException::before {
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+        font-size: 1.75rem;
+        opacity: 0;
+        z-index: 10;
+        transition: .4s;
+        pointer-events: none;
+    }
+
+    .textOverlay1:hover::before,
+    .textOverlayException:hover::before,
+    .textOverlay2:hover::before,
+    .textOverlay3:hover::before {
+        opacity: 1;
+    }
+
+    .textOverlay1::before {
+        content: "Series: What you see?!";
+        color: #f5f5f5;
+    }
+
+    .textOverlayException::before {
+        content: "Series: What you see?!";
+        color: #1B1B1B;
+    }
+
+    .textOverlay2::before {
+        content: "Series: Colors";
+        color: #1b1b1b;
+    }
+
+    .textOverlay3::before {
+        content: "Series: Dot Line Shape";
+        color: #1B1B1B;
+    }
+
+    .grid1::after,
+    .grid2::after,
+    .grid3::after,
+    .grid4::after,
+    .grid5::after,
+    .grid6::after,
+    .grid7::after,
+    .grid8::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        opacity: 0;
+        transition: all .3s;
+        pointer-events: none;
+    }
+
+    .grid1:hover::after,
+    .grid2:hover::after,
+    .grid3:hover::after,
+    .grid4:hover::after,
+    .grid5:hover::after,
+    .grid6:hover::after,
+    .grid7:hover::after,
+    .grid8:hover::after {
+        opacity: 1;
+    }
+
+    .grid1::after {
+        background-color: #000002;
+    }
+
+    .grid2::after {
+        background-color: #46703E;
+    }
+
+    .grid3::after {
+        background-color: #F9F6F6;
+    }
+
+    .grid4::after {
+        background-color: #F7C9C3;
+    }
+
+    .grid5::after {
+        background-color: #E8C3EF;
+    }
+
+    .grid6::after {
+        background-color: white;
+    }
+
+    .grid7::after {
+        background-color: white;
+    }
+
+    .grid8::after {
+        background-color: white;
+    }
+
+    nav ul li a {
+        color: #C4C5C2 !important;
+        transition: .3s;
+    }
+
+    nav ul li a:hover {
+        color: #848981 !important;
+    }
+
+    .hoverUnderline {
+        text-decoration: underline 2px;
+        text-decoration-color: #84898100;
+        transition: all .3s;
+    }
+
+    .hoverUnderline:hover {
+        text-decoration-color: #848981;
+    }
 }

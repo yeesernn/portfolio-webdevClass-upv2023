@@ -59,3 +59,25 @@ Color shades 1-6, 1 lightest to 6 darkest
 .boxShadow {
     box-shadow: 1px 4px 8px 0 #848981;
 }
+
+/* .hoverUnderline::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #848981;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform .2s;
+    margin-top: 2px;
+}
+
+.hoverUnderline:hover::after {
+    transform: scale(1, 1);
+} 
+
+Ran into issues such as:
+1. not working for flex child of the three series
+2. even if work it span the whole box of the children
+3. once expanded, the line spans the whole of the IMAGE text's box.
+4. and have to think how to implement how to make it ONLY on Desktop mode
+*/

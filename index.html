@@ -15,51 +15,58 @@
     </head>
 
     <body class="bgColor1">
+        <div class="leftSide"> 
+            <!--Wrap em in container so media query doesn't break-->
         <header class="bgColor1">
             <div class="headings bgColor1">
                 <div class="headingWrapper">
                     <a href="#"><h1 class="color6">EDDY GOH</h1></a>
                     <span class="icon-menu color6" id="buttonMenu"></span>
                 </div>
+                <h2 class="color4 h2Desktop">
+                    Photographer<br>
+                    &<br>
+                    Artist<br>
+                </h2>
+                <h3 class="color4 h3Desktop">Welcome!</h3>
                 <nav id="menuTransitionOff">
-                    <ul class="navOpaque bgColor1 color5">
-                        <li><a href="#" class="color5">Images</a>
+                    <ul class="leftMenu navOpaque bgColor1 color5">
+                        <li><a href="#" class="color5 hoverUnderline" id="imageBtn">Images</a>
                             <ul>
-                                <li><a href="./series1.html" class="seriesMenu color5">Series: What you see?!</a></li>
-                                <li><a href="./series2.html" class="seriesMenu color5">Series: Colors</a></li>
-                                <li><a href="./series3.html" class="seriesMenu color5">Series: Dot Line Shape</a></li>
+                                <li><a href="./series1.html" class="seriesMenu color5 hoverUnderline">Series: What you see?!</a></li>
+                                <li><a href="./series2.html" class="seriesMenu color5 hoverUnderline">Series: Colors</a></li>
+                                <li><a href="./series3.html" class="seriesMenu color5 hoverUnderline">Series: Dot Line Shape</a></li>
                             </ul>
                         </li>
-                        <li><a href="./about.html" class="color5">About</a></li>
-                        <li><a href="./contact.html" class="color5">Contact</a></li>
+                        <li><a href="./about.html" class="color5 hoverUnderline">About</a></li>
+                        <li><a href="./contact.html" class="color5 hoverUnderline">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <h2 class="color4">
+            <h2 class="color4 h2Mobile">
                 Photographer<br>
                 &<br>
                 Artist<br>
-            </h2>
+            </h2> 
         </header>
+        <h3 class="color4 h3Mobile">Welcome!</h3>
+        </div>
         
-        <h3 class="color4">Welcome!</h3>
-
-        <article><a href="./series1.html" class="color5">Series: What you see?!</a></article>
-        <section class="imgContainer">
-            <a href="./series1.html"><img src="./img/Series1/1-1.jpg" alt="" class="boxShadow"></a>
-            <a href="./series1.html"><img src="./img/Series1/1-2.jpg" alt="" class="boxShadow"></a>
-        </section>
+        <div class="rightSide">
+            <article><a href="./series1.html" class="color5">Series: What you see?!</a></article>
+            <section class="grid1 textOverlay1"><a href="./series1.html"><img src="./img/Series1/1-1.jpg" alt="" class="boxShadow"></a></section>
+            <section class="grid2 textOverlay1"><a href="./series1.html"><img src="./img/Series1/1-2.jpg" alt="" class="boxShadow"></a></section>
+            <section class="imgDesktopOnly grid3 textOverlayException"><a href="./series1.html"><img src="./img/Series1/1-4.jpeg" alt="" class="boxShadow"></a></section>
+            <!-- separation -->
+            <article><a href="./series2.html" class="color5">Series: Colors</a></article>
+            <section class="grid4 textOverlay2"><a href="./series2.html"><img src="./img/Series2/2-1.jpg" alt="" class="boxShadow"></a></section>
+            <section class="grid5 textOverlay2"><a href="./series2.html"><img src="./img/Series2/2-2.jpg" alt="" class="boxShadow"></a></section>
+            <!-- separation -->
+            <article><a href="./series3.html" class="color5">Series: Dot Line Shape</a></article>
+            <section class="grid6 textOverlay3"><a href="./series3.html"><img src="./img/Series3/3-1.jpg" alt="" class="boxShadow"></a></section>
+            <section class="grid7 textOverlay3"><a href="./series3.html"><img src="./img/Series3/3-2.jpg" alt="" class="boxShadow"></a></section>
+            <section class="imgDesktopOnly grid8 textOverlay3"><a href="./series3.html"><img src="./img/Series3/3-3.jpg" alt="" class="boxShadow"></a></section>
         
-        <article><a href="./series2.html" class="color5">Series: Colors</a></article>
-        <section class="imgContainer">
-            <a href="./series2.html"><img src="./img/Series2/2-1.jpg" alt="" class="boxShadow"></a>
-            <a href="./series2.html"><img src="./img/Series2/2-2.jpg" alt="" class="boxShadow"></a>
-        </section>
-
-        <article><a href="./series3.html" class="color5">Series: Dot Line Shape</a></article>
-        <section class="imgContainer">
-            <a href="./series3.html"><img src="./img/Series3/3-1.jpg" alt="" class="boxShadow"></a>
-            <a href="./series3.html"><img src="./img/Series3/3-2.jpg" alt="" class="boxShadow"></a>
-        </section>
+        </div>
     </body>
 </html>
