@@ -19,11 +19,13 @@ header {
 
 .headroom {
     will-change: transform;
-    transition: transform 200ms linear;
+    transition: transform 300ms linear;
 }
+
 .headroom--pinned {
     transform: translateY(0%);
 }
+
 .headroom--unpinned {
     transform: translateY(-100%);
 }
@@ -57,22 +59,30 @@ h1 {
     cursor: pointer;
 }
 
+.h2Desktop {
+    display: none;
+}
+
+.h3Desktop {
+    display: none;
+}
+
 nav {
     position: absolute;
     width: 100%;
     height: 100vh;
-    top: -900%; 
+    top: -900%;
     transition: all 0.3s ease-in-out;
     z-index: 10;
     background-color: #c4c5c270;
 }
 
 .navOpaque {
-    height: 40vh;
+    height: 50vh;
 }
 
 .showMenu {
-    top: 100%; /* % relative to the parent: .headings, thus let h1 come out*/
+    top: 100%;
 }
 
 nav ul {
@@ -90,12 +100,12 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .seriesMenu {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     /* outline: 2px solid blue; */
     padding: 0px 0 0px 32px;
 }
@@ -108,7 +118,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Raleway Dots', 'Brush Script MT', cursive; 
+    font-family: 'Raleway Dots', 'Brush Script MT', cursive;
     font-weight: 400;
     font-size: 2.5rem;
     margin: 30vh 0 2vh 0;
@@ -123,8 +133,158 @@ h3 {
     gap: 24px;
 }
 
+/* rightSide got same as this imgContainer */
+
 img {
     width: 100%;
     height: auto;
     /* margin: 0 0 24px 0; */
+}
+
+/* --------------Media queries start ------------------------*/
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        /* border: 10px solid green; */
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .leftSide {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    /* this was .rightSide */
+    .imgContainer {
+        width: 50vw;
+        padding: 2rem 1rem 1rem 1rem;
+        overflow-y: auto;
+    }
+
+    header {
+        position: static;
+        /* outline: 2px dotted blue; */
+    }
+
+    .headings {
+        position: static;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    /* h1 {
+        background-color: lightsalmon !important;
+    } */
+
+    h2 {
+        margin: -5rem 0 2rem 0;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .h3Mobile {
+        display: none;
+    }
+
+    /* .h2Mobile {
+        display: none;
+    } */
+
+    .h3Desktop {
+        display: inline-flex;
+        /* outline: 2px solid green; */
+        margin: 0 0.5rem 0 1rem;
+        align-self: flex-end;
+    }
+
+    .h2Desktop {
+        display: inline-flex;
+        /* outline: 3px solid red; */
+    }
+
+    nav {
+        position: static;
+        height: 100%;
+    }
+
+    .navOpaque {
+        height: 40vh;
+    }
+
+    .leftMenu {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .seriesMenu {
+        padding: 0px 0 0px 32px;
+        /* display: none; */
+        /* transition: all 0.6s ease-in-out; */
+        /* position: static; */
+        /* opacity: 1; */
+        /* max-height: 0px; */
+        /* overflow: hidden; */
+    }
+
+    nav ul li a {
+        color: #9FA29C !important;
+        transition: .3s ease-in-out;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    /* .rightSide>article {
+        display: none;
+    } */
+
+    .selected {
+        color: #1B1B1B !important;
+        text-decoration: underline 2px !important;
+        text-decoration-color: #1B1B1B !important;
+    }
+}
+
+/* ----------------------Media queries for DESKTOP ----------------------------- */
+@media (min-width: 1024px) {
+    h1:hover {
+        color: #848981;
+        transition: .3s ease-in-out;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+
+    .seriesMenu {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a:hover {
+        color: #1B1B1B !important;
+    }
+
+    .hoverUnderline {
+        text-decoration: underline 2px;
+        text-decoration-color: #1B1B1B00;
+        transition: all .3s ease-in-out;
+    }
+
+    .hoverUnderline:hover {
+        text-decoration-color: #1B1B1B;
+    }
 }

@@ -38,7 +38,7 @@ let x = document.getElementById("imageBtn");
 x.addEventListener("click", test);
 function test() {
     let y = document.querySelectorAll(".seriesMenu");
-    console.log(y);
+    // console.log(y);
     y.forEach(function (element) {
         if (element.style.display === "inline-flex") {
         element.style.display = "none";
