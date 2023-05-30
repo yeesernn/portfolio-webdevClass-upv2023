@@ -159,7 +159,16 @@ img {
         width: 50vw;
         padding: 2rem 1rem 1rem 1rem;
         overflow-y: auto;
+
+        /* overflow-x: hidden;
+        transform: rotate(-90deg) translateY(-100px);
+        transform-origin: right top; */
     }
+
+    /* .imgContainer > img {
+        transform: rotate(90deg);
+        transform-origin: right top;
+    } */
 
     header {
         position: static;
