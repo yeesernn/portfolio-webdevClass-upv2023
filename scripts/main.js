@@ -8,7 +8,7 @@ function toggleMenu() {
     menuTransition.classList.toggle("showMenu");
 }
 
-
+//LOS DEJO AQUI PARA PODER REVISAR FUTURAMENTE
 // JS menu in TABLET + DESKTOP
 /*
 let imageButton = document.querySelector("#imageBtn");
@@ -34,12 +34,12 @@ function test() {
 */
 
 // https://www.tutorialstonight.com/javascript-queryselectorall-foreach 
-let x = document.getElementById("imageBtn");
-x.addEventListener("click", test);
+let clickImage = document.getElementById("imageBtn");
+clickImage.addEventListener("click", test);
 function test() {
-    let y = document.querySelectorAll(".seriesMenu");
+    let classSeriesMenu = document.querySelectorAll(".seriesMenu");
     // console.log(y);
-    y.forEach(function (element) {
+    classSeriesMenu.forEach(function (element) {
         if (element.style.display === "inline-flex") {
         element.style.display = "none";
         } else {
@@ -51,19 +51,19 @@ function test() {
 // LOS DEJO AQUI PARA FUTURAMENTE PODER REVISAR Y ENTENDER PORQUE NO FUNCIONABA 
 
 
-//------------------------------------------------------------------UNWANTED BEHAVIOR IS HERE RIGHT NOW!
+//------------------------------------------------------------------UNWANTED BEHAVIOR HERE RIGHT NOW!
 // javascript override css display property after change of media queries
 //https://stackoverflow.com/questions/46054334/javascript-overriding-css-display-property-after-change-of-media-query
-// ----------------resize on MOBILE auto revert to display TRUE
+// -----resize on MOBILE auto revert to display TRUE
 window.addEventListener("resize", function() {
     if (window.innerWidth < 600) {
-        let z = document.querySelectorAll(".seriesMenu");
-        z.forEach(function (tests) {
+        let cssClassSeriesMenu = document.querySelectorAll(".seriesMenu");
+        cssClassSeriesMenu.forEach(function (tests) {
             tests.style.display = "inline-flex";
         })
     } else if (window.innerWidth > 600) {
-        let z = document.querySelectorAll(".seriesMenu");
-        z.forEach(function (tests) {
+        let cssClassSeriesMenu = document.querySelectorAll(".seriesMenu");
+        cssClassSeriesMenu.forEach(function (tests) {
             tests.style.display = "none";
         })
     }

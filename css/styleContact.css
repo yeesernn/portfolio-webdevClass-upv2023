@@ -85,7 +85,7 @@ iframe {
     width: 100%;
 }
 
-/*
+/* No need media queries for tablet on this page
 @media (min-width: 600px) {
     body {
         background-color: lightblue !important;
@@ -95,7 +95,6 @@ iframe {
 
 @media (min-width: 1024px) {
     body {
-        /* background-color: lightgoldenrodyellow !important; */
         display: flex;
         flex-flow: column;
     }
@@ -126,7 +125,6 @@ iframe {
     }
 
     h2 {
-        /* outline: 3px solid aqua; */
         align-self: flex-start;
         font-size: 2rem;
     }
@@ -139,7 +137,6 @@ iframe {
     .wrapper2 {
         display: flex;
         flex-flow: column;
-        /* outline: 2px solid yellow; */
         flex: 1.5;
         justify-content: space-between;
     }
@@ -147,7 +144,6 @@ iframe {
     .wrapper3 {
         display: flex;
         flex-flow: column;
-        /* outline: 2px solid red; */
         flex: 1;
     }
 

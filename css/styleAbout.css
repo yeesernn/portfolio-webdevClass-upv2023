@@ -65,20 +65,12 @@ p {
 }
 
 @media (min-width: 600px) {
-    /* body {
-        background-color: lightcyan !important;
-    } */
-
     img {
         max-width: 30vw;
     }
 }
 
 @media (min-width: 1024px) {
-    /* body {
-        background-color: lightcoral !important;
-    } */
-
     h1 {
         font-size: 1.5rem;
         color: #848981 !important;
@@ -109,13 +101,11 @@ p {
     }
 
     h2 {
-        /* outline: 1px solid aqua; */
         margin: 0 2rem 0 0;
         font-size: 4rem;
     }
 
     .wrapper1 {
-        /* outline: 1px solid greenyellow; */
         display: flex;
         width: 100%;
         height: calc(100vh - 112px);
@@ -125,7 +115,6 @@ p {
     .sectionImg {
         height: 100%;
         flex: 1.5;
-        /* outline: 2px solid blue; */
         justify-content: space-between;
     }
 
@@ -134,7 +123,6 @@ p {
     }
 
     .wrapper2 {
-        /* outline: 2px solid black; */
         align-self: flex-end;
         display: flex;
         flex-direction: column;

@@ -134,7 +134,6 @@ img {
 @media (min-width: 600px) {
     body {
         display: flex;
-        /* border: 10px solid green; */
         height: 100vh;
         margin: 0;
         padding: 0;
@@ -153,7 +152,6 @@ img {
 
     header {
         position: static;
-        /* outline: 2px dotted blue; */
     }
 
     .headings {
@@ -163,10 +161,6 @@ img {
         justify-content: space-between;
         gap: 4rem;
     }
-
-    /* h1 {
-        background-color: lightsalmon !important;
-    } */
 
     h2 {
         margin: -5rem 0 2rem 0;
@@ -182,14 +176,12 @@ img {
 
     .h3Desktop {
         display: inline-flex;
-        /* outline: 2px solid green; */
         margin: 0 0 0 1rem;
         align-self: flex-start;
     }
 
     .h2Desktop {
         display: inline-flex;
-        /* outline: 3px solid red; */
     }
 
     nav {
@@ -210,13 +202,7 @@ img {
     }
 
     .seriesMenu {
-        /* padding: 0px 0 0px 32px; */
         display: none;
-        /* transition: all 0.6s ease-in-out; */
-        /* position: static; */
-        /* opacity: 1; */
-        /* max-height: 0px; */
-        /* overflow: hidden; */
     }
 
     nav ul li a {
@@ -235,10 +221,6 @@ img {
 
 /* ----------------------Media queries for DESKTOP ----------------------------- */
 @media (min-width: 1024px) {
-    /* h1 {
-        background-color: lightskyblue !important;
-    } */
-
     h1:hover {
         color: #848981;
         transition: .3s ease-in-out;
