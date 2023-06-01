@@ -48,6 +48,9 @@ function test() {
     });
 }
 
+// LOS DEJO AQUI PARA FUTURAMENTE PODER REVISAR Y ENTENDER PORQUE NO FUNCIONABA 
+
+
 //------------------------------------------------------------------UNWANTED BEHAVIOR IS HERE RIGHT NOW!
 // javascript override css display property after change of media queries
 //https://stackoverflow.com/questions/46054334/javascript-overriding-css-display-property-after-change-of-media-query

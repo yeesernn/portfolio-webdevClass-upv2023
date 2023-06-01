@@ -84,6 +84,18 @@ p {
         color: #848981 !important;
     }
 
+    h1:hover {
+        color: #1b1b1b !important;
+    }
+
+    .closeBtn > a {
+        font-size: 1.25rem;
+    }
+
+    .closeBtn>a:hover {
+        color: #1b1b1b;
+    }
+
     img {
         max-width: 20vw;
     }

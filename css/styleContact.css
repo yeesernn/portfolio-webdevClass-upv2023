@@ -28,23 +28,24 @@ a {
     text-decoration: none;
 }
 
+.closeBtn {
+    border: none;
+}
+
 form {
-    margin: 0 0 2rem 0;
+    margin: 3rem 0 2rem 0;
     border: 1.75px solid;
     border-radius: 4px;
     padding: 1rem 0.75rem;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     margin: 0 0 1rem 0;
     padding: 0.5rem;
     border: 1.75px solid;
     border-radius: 4px;
-}
-
-.msgInput {
-    padding: 4rem;
 }
 
 form button {
@@ -67,11 +68,97 @@ h2 {
     align-items: center;
 }
 
+h3 {
+    display: none;
+}
+
 .contacts {
     margin: 2rem 0;
     line-height: 1.5rem;
 }
 
+p {
+    font-weight: lighter;
+}
+
 iframe {
     width: 100%;
+}
+
+/*
+@media (min-width: 600px) {
+    body {
+        background-color: lightblue !important;
+    }
+}
+*/
+
+@media (min-width: 1024px) {
+    body {
+        /* background-color: lightgoldenrodyellow !important; */
+        display: flex;
+        flex-flow: column;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #848981 !important;
+    }
+
+    h1:hover {
+        color: #1b1b1b !important;
+    }
+
+    .closeBtn > a {
+        font-size: 1.25rem;
+    }
+
+    .closeBtn>a:hover {
+        color: #1b1b1b;
+    }
+
+    h3 {
+        display: inline-block;
+        font-family: 'Raleway Dots', 'Brush Script MT', cursive;
+        font-weight: 400;
+        font-size: 4rem;
+        margin: 0 3rem 0 2rem;
+    }
+
+    h2 {
+        /* outline: 3px solid aqua; */
+        align-self: flex-start;
+        font-size: 2rem;
+    }
+
+    .wrapper1 {
+        display: flex;
+        height: calc(100vh - 128px);
+    }
+
+    .wrapper2 {
+        display: flex;
+        flex-flow: column;
+        /* outline: 2px solid yellow; */
+        flex: 1.5;
+        justify-content: space-between;
+    }
+
+    .wrapper3 {
+        display: flex;
+        flex-flow: column;
+        /* outline: 2px solid red; */
+        flex: 1;
+    }
+
+    .wrapper4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p,
+    p > * {
+        font-size: 1.25rem;
+    }
 }
